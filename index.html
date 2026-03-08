@@ -15,11 +15,11 @@
   </head>
   <body>
     <main class="signup">
-      <section class="signup-photo">
-        <h1>odin project</h1>
+      <section class="signup-photo-container">
         <img
           src="./src/assets/images/vecteezy_work-from-home-illustration-concept-man-working-on-laptop_5514404.jpg"
           alt=""
+          class="signup-img"
         />
       </section>
       <section class="signup-form">
@@ -27,7 +27,7 @@
           <fieldset>
             <legend>Signup</legend>
 
-            <div class="form-option">
+            <div class="form-group">
               <label for="full-name"><i class="fa-solid fa-user"></i></label>
               <input
                 type="text"
@@ -37,7 +37,7 @@
               />
             </div>
 
-            <div class="form-option">
+            <div class="form-group">
               <label for="phone-number"
                 ><i class="fa-solid fa-phone"></i
               ></label>
@@ -49,7 +49,7 @@
               />
             </div>
 
-            <div class="form-option">
+            <div class="form-group">
               <label for="email"><i class="fa-solid fa-at"></i></label>
               <input
                 type="email"
@@ -59,7 +59,7 @@
               />
             </div>
 
-            <div class="form-option">
+            <div class="form-group">
               <label for="password"><i class="fa-solid fa-key"></i></label>
               <input
                 type="password"
@@ -69,7 +69,7 @@
               />
             </div>
 
-            <div class="form-option">
+            <div class="form-group">
               <label for="confirm-password"
                 ><i class="fa-solid fa-lock"></i
               ></label>
@@ -82,14 +82,13 @@
             </div>
 
             <div class="form-agreement">
-              <input type="checkbox" id="terms" name="terms" />
-              <label for="terms">
+              <p class="terms">
                 By signing up, you agree to our
                 <span>Terms & Conditions</span> and <span>Privacy Policy</span>
-              </label>
+              </p>
             </div>
 
-            <button class="form-submit" type="submit">Create Account</button>
+            <button class="btn submit-btn" type="submit">Create Account</button>
 
             <p class="form-login">
               Already have an account? <a href="#">Login</a>

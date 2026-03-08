@@ -2,4 +2,114 @@
 *:before,
 *:after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src:
+    url('../assets/fonts/Inter-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Inter-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Inter';
+  background: #fffe;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  color: #094067;
+  font-size: 1.5rem;
+}
+
+.btn {
+  border: transparent;
+  background: #3da9fc;
+  color: #fffffe;
+  padding: 0.75rem 0.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.submit-btn {
+  width: 100%;
+}
+
+.signup-img {
+  display: block;
+  object-fit: cover; /* cover fills the area, contain leaves gaps */
+  width: 100%;
+  height: 100%; /* add this so the image fills the section */
+}
+
+main {
+  height: 100vh;
+}
+
+section.signup-photo-container {
+  height: 50%;
+}
+
+section.signup-form {
+  display: flex;
+  justify-content: center;
+}
+
+section.signup-form {
+  height: 50%;
+  padding-left: 1.5rem;
+}
+
+span {
+  color: #3da9fc;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-top: 1rem;
+}
+
+.form-group i {
+  color: #3da9fc;
+  font-size: clamp(0.75rem, 5vw, 1.25rem);
+}
+
+.form-group label {
+  width: min(90%, 400px);
+}
+
+.form-group input {
+  width: 90%;
+  padding: 0.25rem 0.15rem;
+  border: 1px solid #90b4ce;
+  border-radius: 5px;
+}
+
+.form-group input:focus {
+  border-width: 2px;
+  outline: none;
+}
+
+.form-agreement,
+.submit-btn,
+.form-login {
+  margin-top: 1rem;
+}
+
+.form-agreement {
+  width: min(100%, 1170px);
+  font-size: 0.75rem;
+}
+
+.form-login {
+  text-align: center;
+  font-size: 0.75rem;
 }

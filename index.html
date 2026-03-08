@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign-up form</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="./src/assets/fontawesome-free-7.2.0-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main class="signup">
+      <section class="signup-photo">
+        <h1>odin project</h1>
+        <img
+          src="./src/assets/images/vecteezy_work-from-home-illustration-concept-man-working-on-laptop_5514404.jpg"
+          alt=""
+        />
+      </section>
+      <section class="signup-form">
+        <form action="#" method="POST">
+          <fieldset>
+            <legend>Signup</legend>
+
+            <div class="form-option">
+              <label for="full-name"><i class="fa-solid fa-user"></i></label>
+              <input
+                type="text"
+                id="full-name"
+                name="full-name"
+                placeholder="Full name"
+              />
+            </div>
+
+            <div class="form-option">
+              <label for="phone-number"
+                ><i class="fa-solid fa-phone"></i
+              ></label>
+              <input
+                type="tel"
+                id="phone-number"
+                name="phone-number"
+                placeholder="(###) ### ###"
+              />
+            </div>
+
+            <div class="form-option">
+              <label for="email"><i class="fa-solid fa-at"></i></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="email@address.com"
+              />
+            </div>
+
+            <div class="form-option">
+              <label for="password"><i class="fa-solid fa-key"></i></label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+              />
+            </div>
+
+            <div class="form-option">
+              <label for="confirm-password"
+                ><i class="fa-solid fa-lock"></i
+              ></label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                placeholder="Confirm password"
+              />
+            </div>
+
+            <div class="form-agreement">
+              <input type="checkbox" id="terms" name="terms" />
+              <label for="terms">
+                By signing up, you agree to our
+                <span>Terms & Conditions</span> and <span>Privacy Policy</span>
+              </label>
+            </div>
+
+            <button class="form-submit" type="submit">Create Account</button>
+
+            <p class="form-login">
+              Already have an account? <a href="#">Login</a>
+            </p>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

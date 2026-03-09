@@ -54,6 +54,7 @@ main {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 section.signup-photo-container {
@@ -62,12 +63,13 @@ section.signup-photo-container {
 
 section.signup-form {
   height: 50%;
-  padding-left: 1.5rem;
   display: flex;
   justify-content: center;
+
+  align-items: center; /* add this */
 }
 
-span {
+.terms {
   color: #3da9fc;
   font-weight: 600;
 }
@@ -78,7 +80,7 @@ span {
 
 .form-group i {
   color: #3da9fc;
-  font-size: clamp(0.75rem, 5vw, 1.25rem);
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
 }
 
 .form-group input {
@@ -100,11 +102,47 @@ span {
 }
 
 .form-agreement {
-  width: min(100%, 1170px);
   font-size: 0.75rem;
 }
 
 .form-login {
   text-align: center;
   font-size: 0.75rem;
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+  }
+
+  section.signup-photo-container {
+    height: 100%; /* full height on desktop, not 50% */
+    flex: 0 0 55%;
+  }
+
+  .signup-form {
+    height: auto; /* let content decide height on desktop */
+    flex: 0 0 40%;
+    align-items: flex-start;
+  }
+
+  legend {
+    font-size: 2rem;
+  }
+
+  .form-agreement {
+    width: 300px;
+  }
+
+  .form-group input {
+    width: 300px;
+  }
+
+  section.signup-photo-container {
+    height: auto;
+  }
 }

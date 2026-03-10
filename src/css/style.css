@@ -27,7 +27,7 @@ fieldset {
 
 legend {
   color: #094067;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .btn {
@@ -37,6 +37,13 @@ legend {
   padding: 0.75rem 0.5rem;
   border-radius: 20px;
   font-weight: 600;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.btn:hover {
+  background: #094067;
+  scale: 1.01;
 }
 
 .submit-btn {
@@ -76,11 +83,18 @@ section.signup-form {
 
 .form-group {
   margin-top: 1rem;
+  display: flex;
+  column-gap: 5px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
 }
 
 .form-group i {
   color: #3da9fc;
-  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  font-size: clamp(1.25rem, 1vw, 1.5rem);
 }
 
 .form-group input {
@@ -116,21 +130,21 @@ section.signup-form {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    column-gap: 3rem;
+    /* column-gap: 3rem; */
   }
 
   section.signup-photo-container {
     height: 100%; /* full height on desktop, not 50% */
-    flex: 0 0 55%;
+    flex: 0 0 50%;
   }
 
   .signup-form {
     height: auto; /* let content decide height on desktop */
-    flex: 0 0 40%;
+    flex: 0 0 50%;
     align-items: flex-start;
   }
 
-  legend {
+  .legend {
     font-size: 2rem;
   }
 
@@ -145,4 +159,19 @@ section.signup-form {
   section.signup-photo-container {
     height: auto;
   }
+}
+
+/* for js */
+
+input.input-error {
+  border-color: red;
+}
+
+input.input-success {
+  border-color: green;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.6rem;
 }
